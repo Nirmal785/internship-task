@@ -13,6 +13,5 @@ const greetButton = document.getElementById('greetButton');
             greetingMessage = "Good Evening! 🌙";
         }
 
-        // Display the greeting in an alert box
         alert(greetingMessage);
     });

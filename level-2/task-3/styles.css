@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  
+  .content {
+    flex: 3;
+    padding: 1rem;
+  }
+  
+  .sidebar {
+    flex: 1;
+    padding: 1rem;
+    background: #f4f4f4;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For tablets and smaller screens */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 0.5rem 0;
+    }
+  
+    main {
+      flex-direction: column;
+    }
+  
+    .content, .sidebar {
+      flex: 1 1 100%;
+    }
+  }
+  
+  /* For mobile phones */
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    nav ul li a {
+      font-size: 0.9rem;
+    }
+  
+    .content h2 {
+      font-size: 1.2rem;
+    }
+  
+    .sidebar h3 {
+      font-size: 1.1rem;
+    }
+  }
